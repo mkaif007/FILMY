@@ -72,7 +72,7 @@ function getColor(vote) {
 }
 
 function GFG_click() {
-    var gfg_down =
+    let gfg_down =
     document.getElementById("gfg_down");
     gfg_down.parentNode.removeChild(gfg_down);
 }
@@ -100,9 +100,9 @@ function truncate(str, n) {
     // every refresh the movie will be change
     const setMovie = data.results[Math.floor(Math.random() * data.results.length - 1)];
     console.log(setMovie);
-    var banner = document.getElementById("banner");
-    var banner_title = document.getElementById("banner__title");
-    var banner__desc = document.getElementById("banner__description");
+    let banner = document.getElementById("banner");
+    let banner_title = document.getElementById("banner__title");
+    let banner__desc = document.getElementById("banner__description");
     banner.style.backgroundImage = "url(" + IMG_URL + setMovie.backdrop_path + ")";
     banner__desc.innerText = truncate(setMovie.overview, 150);
     banner_title.innerText = setMovie.name;
